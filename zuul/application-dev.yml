@@ -8,9 +8,10 @@ zuul:
       #url
       strip‐prefix: false #true:代理转发时去掉前缀，false:代理转发时不去掉前缀
     consumer:
-      path: /consumer/**
+      path: /consumer/**a
       serviceId: consumer
       sensitiveHeaders: #默认zuul会屏蔽cookie，cookie不会传到下游服务，这里设置为空则取消默认的黑名单，如果设置了具体的头信息则不会传到下游服务
       #   ignoredHeaders: Authorization
       #url
       strip‐prefix: false #true:代理转发时去掉前缀，false:代理转发时不去掉前缀
+address: application-dev
